@@ -15,7 +15,7 @@ processor = Wav2Vec2Processor.from_pretrained(model_name_or_path)
 sampling_rate = processor.feature_extractor.sampling_rate
 model = AutoModelForAudioClassification.from_pretrained(model_name_or_path, trust_remote_code=True).to(device)
 
-API_TOKEN = '7260511059:AAFfHvH7AOnBuc3ByUS5LX2f2Gu2ScVZ8ig'
+API_TOKEN = '7260511059:'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
